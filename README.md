@@ -1,5 +1,5 @@
 # Genesys
-Genesys is a (System|Code Generator) written in scala. This application allows to create source code from handlerbar templates.
+Genesys is a (System|Code Generator) written in scala. This application allows to create source code from [handlerbar](http://handlebarsjs.com/) templates.
 Genesys supports 3 kinds sources:
 - Database
 - Xml
