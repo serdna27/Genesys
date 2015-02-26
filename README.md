@@ -67,6 +67,22 @@ Genesys in order to run needs a json file that contains the basic information of
 	}
 }
 ```
+Below is the code generated based on the template:
+```csharp
+namespace YourNameSpace{
 
+	public class YourClassDTO:IDTO {
+				        
+		           public string action {get;set;}  
+		        
+		           public string source {get;set;}  
+		        
+		           public DateTime creationDate {get;set;}  
+		        
+		           public int Id {get;set;}  
+		              
+	}
+}
+```
 
 
