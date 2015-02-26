@@ -54,7 +54,19 @@ Genesys in order to run needs a json file that contains the basic information of
    ]
 }
  ```
- The basic usage would'be something like this:
- 
+ Below is an example of a c-sharp template:
+ ```csharp
+ namespace YourNameSpace{
+
+	public class {{name}}:IDTO {
+				        
+		        {{#fields}}
+		           public {{type}} {{name}} {get;set;}  
+		        {{/fields}}
+				         
+	}
+}
+```
+
 
 
