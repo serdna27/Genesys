@@ -38,9 +38,13 @@ ehthumbs.db
 Thumbs.db
 
 # custom #
-.target/
+target/*
 .project/target
-.setings/
+.settings/
 .idea/
 .idea_modules/
 .project/
+.project
+.classpath
+project/project
+project/target
