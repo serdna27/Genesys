@@ -1,0 +1,188 @@
+[debug] :: resolving dependencies :: genesys#genesys$sources_javadoc_2.11;0.1
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
+[info] Resolving org.scala-lang#scala-library;2.11.4 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ec4e598
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.4
+[debug] 	local: revision in cache: org.scala-lang#scala-library;2.11.4
+[debug] 	found org.scala-lang#scala-library;2.11.4 in sbt-chain
+[debug] 	[2.11.4] org.scala-lang#scala-library;2.11.4
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->master]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [runtime]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->master]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [test]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [runtime]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->master]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [optional]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile-internal]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->master]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [optional]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [provided]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile-internal->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile-internal->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile-internal->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile-internal->master]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [runtime-internal]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [runtime]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->master]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [optional]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime-internal->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime-internal->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime-internal->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime-internal->master]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [test-internal]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [test]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [runtime]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [compile->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [runtime->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test->master]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [optional]
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [provided]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test-internal->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test-internal->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test-internal->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [test-internal->master]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [plugin]
+[debug] resolving dependencies for configuration 'sources'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [sources]
+[debug] resolving dependencies for configuration 'docs'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [docs]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for genesys#genesys$sources_javadoc_2.11;0.1 [scala-tool]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [scala-tool->default(compile)]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [scala-tool->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [scala-tool->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-library;2.11.4 [scala-tool->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-compiler;2.11.4 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang#scala-compiler;2.11.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.4 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.4
+[debug] 	local: revision in cache: org.scala-lang#scala-compiler;2.11.4
+[debug] 	found org.scala-lang#scala-compiler;2.11.4 in sbt-chain
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-compiler;2.11.4 [scala-tool->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-compiler;2.11.4 [scala-tool->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-compiler;2.11.4 [scala-tool->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-reflect;2.11.4 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang#scala-reflect;2.11.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.4 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.4
+[debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.11.4
+[debug] 	found org.scala-lang#scala-reflect;2.11.4 in sbt-chain
+[debug] 	[2.11.4] org.scala-lang#scala-reflect;2.11.4
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-reflect;2.11.4 [scala-tool->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-reflect;2.11.4 [scala-tool->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang#scala-reflect;2.11.4 [scala-tool->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.2 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
+[debug] 	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
+[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [scala-tool->default(compile)]
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2
+[debug] 	local: revision in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2
+[debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in sbt-chain
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [scala-tool->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [scala-tool->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [scala-tool->master]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->jline#jline;2.12 [scala-tool->default(compile)]
+[info] Resolving jline#jline;2.12 ...
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.12 {scala-tool=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: jline#jline;2.12
+[debug] 	local: revision in cache: jline#jline;2.12
+[debug] 	found jline#jline;2.12 in sbt-chain
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->jline#jline;2.12 [scala-tool->runtime]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->jline#jline;2.12 [scala-tool->compile]
+[debug] == resolving dependencies genesys#genesys$sources_javadoc_2.11;0.1->jline#jline;2.12 [scala-tool->master]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.4!scala-library.jar
+[debug] 		tried /Users/andresktejada/.ivy2/local/org.scala-lang/scala-library/2.11.4/docs/scala-library-javadoc.jar
+[debug] 		tried /Users/andresktejada/.ivy2/local/org.scala-lang/scala-library/2.11.4/srcs/scala-library-sources.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-javadoc.jar
+[info] downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-javadoc.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-javadoc.jar
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-javadoc.jar.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-javadoc.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.4!scala-library.jar(doc) (592296ms)
+[debug] 		tried http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-sources.jar
+[info] downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-sources.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-sources.jar
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-sources.jar.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.4!scala-library.jar(src) (21728ms)
+[debug] 		tried /Users/andresktejada/.ivy2/local/org.scala-lang/scala-compiler/2.11.4/docs/scala-compiler-javadoc.jar
+[debug] 		tried /Users/andresktejada/.ivy2/local/org.scala-lang/scala-compiler/2.11.4/srcs/scala-compiler-sources.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-javadoc.jar
+[info] downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-javadoc.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-javadoc.jar
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-javadoc.jar.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-javadoc.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.11.4!scala-compiler.jar(doc) (237979ms)
+[debug] 		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-sources.jar
+[info] downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-sources.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4-sources.jar
