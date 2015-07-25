@@ -10,7 +10,7 @@ import java.sql.{DriverManager,DatabaseMetaData}
 
 abstract class ObjDef(val name: String)
 
-class FieldDef(override val name: String, val typeValue: String,var entName:String="",val length:Option[Int]=None,val nullable:Option[Boolean]=None,val primary:Option[Boolean]=None) extends ObjDef(name)
+class FieldDef(override val name: String, val typeValue: String,val length:Option[Int]=None,val nullable:Option[Boolean]=None,val primary:Option[Boolean]=None,val foreignKey:Option[String]=None) extends ObjDef(name)
 
 class EntityDef(override val name: String, val label: String) extends ObjDef(name) {
 
@@ -43,7 +43,6 @@ trait XmlParser extends SourceParser{
       entity.addField(field.text -> new FieldDef(field.text, fieldType))
     }
     println("loading xml-parser..")
-    println(entity.label)
     return entity
     
   }
@@ -54,37 +53,51 @@ trait DbParser extends SourceParser{
   
   private def getPrimaryKey(table:String,metadata:DatabaseMetaData):Set[String]={
      var resultPks=metadata.getPrimaryKeys(null, null, table)
-     val pks=Set.empty[String]
+     var pks=Set.empty[String]
      while(resultPks.next()){
-       pks.+(resultPks.getString("COLUMN_NAME"))
+       pks=pks.+(resultPks.getString("COLUMN_NAME"))
       }
      return pks
      
    }
   
+  private def getForeingKeys(table:String,metadata:DatabaseMetaData):Map[String,String]={
+    var resultFK=metadata.getImportedKeys(null, null, table);
+    var fks=Map.empty[String,String]//Set.empty[String];
+    while (resultFK.next()){
+      val tablePKName=resultFK.getString("PKTABLE_NAME");
+      val fkColumnName=resultFK.getString("FKCOLUMN_NAME");
+      fks=fks + (fkColumnName -> tablePKName)  
+    }
+    return fks
+  }
+  
   override def getEntity(sourceModel:Any):EntityDef={
-    
+
     val model=sourceModel.asInstanceOf[(String, DatabaseMetaData)]
     val tableName=model._1
     val metadata=model._2
     var entity = new EntityDef(tableName, tableName)
     var columnsResult=metadata.getColumns(null, null, tableName, null)
     val pks=getPrimaryKey(tableName,metadata)
+    val fkMap=getForeingKeys(tableName, metadata);
+    println("foreing keys==>"+Map);
     while (columnsResult.next()) {
+    
       entity.addField(
               columnsResult.getString("COLUMN_NAME")->new FieldDef(
               name=columnsResult.getString("COLUMN_NAME"),
-              entName=tableName,
               typeValue=columnsResult.getString("TYPE_NAME").split(" ")(0),//put this fix to avoid extra type info comming from the db
               length=Option(columnsResult.getInt("COLUMN_SIZE")),
               nullable=Option(columnsResult.getInt("NULLABLE")==DatabaseMetaData.columnNullable),
-              primary=Option(pks.contains(columnsResult.getString("COLUMN_NAME")))
+              primary=Option(pks.contains(columnsResult.getString("COLUMN_NAME"))),
+              foreignKey=fkMap.get(columnsResult.getString("COLUMN_NAME"))
               )
           )
     }
     
 
-    println("loading db-parser..")
+
     return entity
     
   }
@@ -96,6 +109,7 @@ import scala.collection.JavaConverters._
 import scala.idx.Genesys.Util._
 
  def apply(config:Config,ents: java.util.List[String]=null):List[EntityDef]={
+    println("enter to Reader and type is==>"+config)
     var entityList:List[EntityDef]=List()
     config match{
       case XmlSource(folder)=>{
@@ -112,7 +126,7 @@ import scala.idx.Genesys.Util._
         if(!(CommonUtil.dbDriverMapping.contains(dbType))){
           throw new Exception("Invalid db type")
         }
-          
+        println("loading driver")  
         Class.forName(CommonUtil.dbDriverMapping(dbType))
         val connection=DriverManager.getConnection(host,user,pwd)
         val metadata=connection.getMetaData

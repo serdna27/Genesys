@@ -14,7 +14,7 @@ case class JsonSource(folderContent:String) extends SourceFile
 
 case class KeysFormat(name:String,val format:String) extends Config
 
-case class TemplateSettings(saveOnDisk:Boolean,directory:String,author:String) extends Config
+case class TemplateSettings(saveOnDisk:Boolean,directory:String,author:String,prefixName:String="",suffixName:String="") extends Config
 
 case class TemplateData(content:String,setting:TemplateSettings) extends Config 
 
