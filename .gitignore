@@ -48,3 +48,4 @@ target/*
 .classpath
 project/project
 project/target
+.DS_Store
