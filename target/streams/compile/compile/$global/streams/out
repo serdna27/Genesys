@@ -1,109 +1,15 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set(/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Domain/ObjDef.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Util/CommonUtil.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala)[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Domain/ObjDef.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Util/CommonUtil.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Domain/ObjDef.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Util/CommonUtil.scala, /Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 5 sources: invalidated sources (5) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 5 Scala sources to /Users/andresktejada/Documents/Development/Scala/Genesys/target/scala-2.11/classes...[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.4[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 185061af, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/classes:/Users/andresktejada/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/Users/andresktejada/Documents/Development/Scala/Genesys/target/scala-2.11/classes[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala:4: object beust is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.beust.jcommander.{JCommander,Parameter}[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala:12: not found: type Parameter[0m
-[0m[[31merror[0m] [0m    @Parameter([0m
-[0m[[31merror[0m] [0m     ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala:16: not found: type Parameter[0m
-[0m[[31merror[0m] [0m    @Parameter(names=Array("--help"),help=true)[0m
-[0m[[31merror[0m] [0m     ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Args.scala:18: not found: type Parameter[0m
-[0m[[31merror[0m] [0m    @Parameter([0m
-[0m[[31merror[0m] [0m     ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:28: object json4s is not a member of package org[0m
-[0m[[31merror[0m] [0m  import org.json4s._[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:29: object json4s is not a member of package org[0m
-[0m[[31merror[0m] [0m  import org.json4s.native.JsonMethods._[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:32: object json4s is not a member of package org[0m
-[0m[[31merror[0m] [0m  import org.json4s.native.Serialization[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:33: object json4s is not a member of package org[0m
-[0m[[31merror[0m] [0m  import org.json4s.native.Serialization.{ read, write, writePretty }[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:37: not found: value Serialization[0m
-[0m[[31merror[0m] [0m      implicit val formats=Serialization.formats(NoTypeHints)[0m
-[0m[[31merror[0m] [0m                           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:37: not found: value NoTypeHints[0m
-[0m[[31merror[0m] [0m      implicit val formats=Serialization.formats(NoTypeHints)[0m
-[0m[[31merror[0m] [0m                                                 ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Configuration.scala:41: not found: value read[0m
-[0m[[31merror[0m] [0m      val configObj=read[Configuration](jsonData)[0m
-[0m[[31merror[0m] [0m                    ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Domain/ObjDef.scala:4: object xml is not a member of package scala[0m
-[0m[[31merror[0m] [0mimport scala.xml._[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Domain/ObjDef.scala:35: not found: value XML[0m
-[0m[[31merror[0m] [0m    val model=XML.loadString(sourceModel.asInstanceOf[String])[0m
-[0m[[31merror[0m] [0m              ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:3: object gilt is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.gilt.handlebars.scala.Handlebars[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:4: object gilt is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.gilt.handlebars.scala.helper._[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:5: object xml is not a member of package scala[0m
-[0m[[31merror[0m] [0mimport scala.xml._[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:7: object gilt is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.gilt.handlebars._[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:8: object gilt is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.gilt.handlebars.scala.binding.dynamic._[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:11: object beust is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.beust.jcommander.JCommander[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:12: object google is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.google.common[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:13: object google is not a member of package com[0m
-[0m[[31merror[0m] [0mimport com.google.common.base.CaseFormat[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:41: not found: type JCommander[0m
-[0m[[31merror[0m] [0m      val jc = new JCommander(Args, args: _*)[0m
-[0m[[31merror[0m] [0m                   ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:82: not found: value Handlebars[0m
-[0m[[31merror[0m] [0m          val parse = Handlebars(Configuration.getTemplate(template.content))[0m
-[0m[[31merror[0m] [0m                      ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:127: not found: value CaseFormat[0m
-[0m[[31merror[0m] [0m    return CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, content.replace(" ", "_"));[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:127: not found: value CaseFormat[0m
-[0m[[31merror[0m] [0m    return CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, content.replace(" ", "_"));[0m
-[0m[[31merror[0m] [0m                                          ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:132: not found: value CaseFormat[0m
-[0m[[31merror[0m] [0m    return CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_CAMEL, content.replace(" ", "_"));[0m
-[0m[[31merror[0m] [0m           ^[0m
-[0m[[31merror[0m] [0m/Users/andresktejada/Documents/Development/Scala/Genesys/src/main/scala/scala/idx/Genesys/Generator.scala:132: not found: value CaseFormat[0m
-[0m[[31merror[0m] [0m    return CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_CAMEL, content.replace(" ", "_"));[0m
-[0m[[31merror[0m] [0m                                     ^[0m
-[0m[[31merror[0m] [0m27 errors found[0m
-[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
-[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m

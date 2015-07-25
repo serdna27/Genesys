@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/genesys.iml" filepath="$PROJECT_DIR$/.idea/modules/genesys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea_modules/Genesys-build.iml" filepath="$PROJECT_DIR$/.idea_modules/Genesys-build.iml"/>
+      <module fileurl="file://$PROJECT_DIR$/.idea_modules/Genesys.iml" filepath="$PROJECT_DIR$/.idea_modules/Genesys.iml"/>
     </modules>
   </component>
 </project>
