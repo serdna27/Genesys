@@ -20,4 +20,6 @@ object Args {
       description="Entities to process separated by comma"
     )
     var entities:java.util.List[String]=_
-  }
+
+
+}

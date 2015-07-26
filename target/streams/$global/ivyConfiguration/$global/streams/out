@@ -1,5 +1,0 @@
-[0m[[0mdebug[0m] [0mOther repositories:[0m
-[0m[[0mdebug[0m] [0mDefault repositories:[0m
-[0m[[0mdebug[0m] [0mUsing inline dependencies specified in Scala.[0m
-[0m[[33mwarn[0m] [0mBinary version (2.11.0-M4) for dependency org.scala-lang#scala-parser-combinators;2.11.0-M4[0m
-[0m[[33mwarn[0m] [0m	in default#genesys$sources_javadoc_2.11;0.1 differs from Scala binary version in project (2.11).[0m

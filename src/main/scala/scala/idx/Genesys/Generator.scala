@@ -47,7 +47,7 @@ object Generator extends App {
 
     config = Configuration(Args.configFile)
     var entities: List[EntityDef] = List()
-    
+
     //read the entities based on the source type
     config.sourceType match {
       case "xml" => entities = (EntityReader(config.source.xml,Args.entities))
@@ -84,7 +84,6 @@ object Generator extends App {
           }
           
           var fileName=template.setting.prefixName+entLabel+template.setting.suffixName+"."+getFileExtension(template.content)
-          println(s"filename==>${fileName}")
           val filePath = Paths.get(template.setting.directory,fileName).toString()
           saveTemplate(filePath, parse(templateData(entName, entLabel, fields)))
           
