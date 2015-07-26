@@ -42,14 +42,14 @@ object Generator extends App {
       val jc = new JCommander(Args, args: _*)
       if(Args.showTemplates==true){
         if(Args.configFile.isEmpty){
-          sys.exit(1)
+          // sys.exit(1)
         }else{
           config = Configuration(Args.configFile)
           showTemplates()
-          sys.exit(1)
+          // sys.exit(1)
         }
       }
-      if (Args.configFile.isEmpty || Args.entities.size() == 0) {
+      else if (Args.configFile.isEmpty || Args.entities.size() == 0) {
         println("error parsing the parameters")
         jc.usage()
       }
