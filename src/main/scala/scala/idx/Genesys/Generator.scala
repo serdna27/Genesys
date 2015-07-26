@@ -40,6 +40,15 @@ object Generator extends App {
 
     try {
       val jc = new JCommander(Args, args: _*)
+      if(Args.showTemplates==true){
+        if(Args.configFile.isEmpty){
+          sys.exit(1)
+        }else{
+          config = Configuration(Args.configFile)
+          showTemplates()
+          sys.exit(1)
+        }
+      }
       if (Args.configFile.isEmpty || Args.entities.size() == 0) {
         println("error parsing the parameters")
         jc.usage()
@@ -59,6 +68,20 @@ object Generator extends App {
     }
   }
 
+
+private def showTemplates()={
+  var numberTemplates=1
+  println()
+  println("**Templates**")
+  while(numberTemplates<=config.templates.size){
+    val template=config.templates(numberTemplates-1)
+    val templateName=Paths.get(template.content).getFileName()
+
+    println(f"$numberTemplates%d-${templateName}%s")
+    numberTemplates+=1
+  }
+
+}
   private def process() {
 
     config = Configuration(Args.configFile)
@@ -75,6 +98,19 @@ object Generator extends App {
     val formatName = config.keysFormat.find { x => x.name == "name"}
 
     try {
+      var templates=config.templates
+      //if the templates files are being specified by command line process them
+      if(Args.templatesFiles.size()>0){
+        templates=templates.filter({
+          k=> Args.templatesFiles.contains(Paths.get(k.content).getFileName.toString)==true
+        })
+      }
+      //check if we have at least one template
+      if(templates.size==0){
+        println("Templates specfied don't existy;!")
+        sys.exit(1)
+      }
+
       Result.TemplatesQty = config.templates.size
       for (entity <- entities) {
 
@@ -85,7 +121,7 @@ object Generator extends App {
           fields = fields.+:(getTemplateField(f, entity.name))
         })
 
-        for (template <- config.templates) {
+        for (template <- templates) {
           val parse = Handlebars(Configuration.getTemplate(template.content))
 
 

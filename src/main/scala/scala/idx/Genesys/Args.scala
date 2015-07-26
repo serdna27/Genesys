@@ -25,5 +25,12 @@ object Args {
     )
     var entities:java.util.List[String]=new util.ArrayList[String]()
 
+    @Parameter(names =Array("-st","--stemplates"),description = "Show the templates included in the config file." )
+    var showTemplates:Boolean=_
+
+  @Parameter(names=Array("-tf","--templates-files"),description = "Templates files to process, if not templates files are specified all templates files will be generated.")
+  var templatesFiles=new util.ArrayList[String]()
+
+
 
 }

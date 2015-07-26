@@ -25,5 +25,21 @@ class GeneSpec extends FlatSpec with Matchers{
     Generator.Result.errors.size should be equals 0
 
   }
+
+  "It" should "show the templates being used" in{
+
+    val configFile = "/Users/andresktejada/Documents/Development/Scala/Code/Genesys/configuration/"
+    Generator.main(Array("-f",configFile,"-st"))
+    Generator.Result.errors.size should be equals 0
+
+  }
+
+  "It" should "process templates specified" in{
+
+    val configFile = "/Users/andresktejada/Documents/Development/Scala/Code/Genesys/configuration/"
+    Generator.main(Array("-f",configFile,"-e","crm_city","-tf","ent.cs"))
+    Generator.Result.errors.size should be equals 0
+
+  }
   
 }
