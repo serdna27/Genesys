@@ -1,6 +1,7 @@
 package scala.idx.Genesys
 
 import java.io.File
+import java.util
 import com.beust.jcommander.{JCommander,Parameter}
 import collection.JavaConversions._
 
@@ -12,14 +13,17 @@ object Args {
     @Parameter(
       names = Array("-f", "--file"),
       description = "Json Configuration File.")
-    var configFile: String=_
-    @Parameter(names=Array("--help"),help=true)
+    var configFile: String="configuration.json"
+
+    @Parameter(names=Array("-h","--help"),description="Show help.",help=true)
     private var help:Boolean=_
+
+
     @Parameter(
       names=Array("-e","--entities"),
-      description="Entities to process separated by comma"
+      description="Entities to process separated by comma."
     )
-    var entities:java.util.List[String]=_
+    var entities:java.util.List[String]=new util.ArrayList[String]()
 
 
 }

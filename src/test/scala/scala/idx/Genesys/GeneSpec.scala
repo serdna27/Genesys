@@ -19,5 +19,11 @@ class GeneSpec extends FlatSpec with Matchers{
       Generator.Result.TemplatesQty should be >0
 
   }
+
+  "It" should "show the help" in{
+    Generator.main(Array("--help"))
+    Generator.Result.errors.size should be equals 0
+
+  }
   
 }
