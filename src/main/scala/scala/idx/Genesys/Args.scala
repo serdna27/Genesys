@@ -31,6 +31,9 @@ object Args {
   @Parameter(names=Array("-tf","--templates-files"),description = "Templates files to process, if not templates files are specified all templates files will be generated.")
   var templatesFiles=new util.ArrayList[String]()
 
+  @Parameter(names=Array("-gc","--gconfig"),description="Generate Configuration Files and folders.")
+  var generateConfig:Boolean=_
+
 
 
 }

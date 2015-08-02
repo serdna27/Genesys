@@ -41,5 +41,14 @@ class GeneSpec extends FlatSpec with Matchers{
     Generator.Result.errors.size should be equals 0
 
   }
+
+  "It" should "create the config file in current folder" in{
+
+    val configFile = "/Users/andresktejada/Documents/Development/Scala/Code/Genesys/configuration/"
+    Generator.main(Array("-gc"))
+//    Generator.cleanConfig()
+    Generator.Result.errors.size should be equals 0
+
+  }
  
 }
