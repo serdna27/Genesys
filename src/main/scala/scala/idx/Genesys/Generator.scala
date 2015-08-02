@@ -89,7 +89,7 @@ private def createConfig()={
 
   val config=Configuration(sourceType = "db",typeMapping = Map("varchar"->"string"),
     source = source,templates=templates,
-    keysFormat=List(KeysFormat(name="name",format = "pascalCase"),KeysFormat(name="#fields.name",format="pascalName")))
+    keysFormat=List(KeysFormat(name="name",format = "pascalCase"),KeysFormat(name="#fields.name",format="pascalCase")))
   implicit val formats = Serialization.formats(NoTypeHints)
 
   val file=Paths.get(currentPath,"configuration.json").toString()
