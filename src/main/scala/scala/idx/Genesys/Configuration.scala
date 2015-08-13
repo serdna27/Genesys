@@ -16,7 +16,7 @@ case class KeysFormat(name:String,val format:String) extends Config
 
 case class TemplateSettings(saveOnDisk:Boolean,directory:String,author:String,prefixName:String="",suffixName:String="",createFolder:Boolean=false) extends Config
 
-case class TemplateData(content:String,setting:TemplateSettings) extends Config 
+case class TemplateData(content:String,setting:TemplateSettings,name:String="") extends Config
 
 case class SourceData(database:DbSource,xml:XmlSource,json:JsonSource) extends Config
 

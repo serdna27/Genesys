@@ -213,7 +213,9 @@ private def showTemplates()={
               case _ => throw new Exception("invalid key format")
             }
           }
-
+          if(template.name!=""){
+            entLabel=template.name
+          }
           var fileName = template.setting.prefixName + entLabel + template.setting.suffixName + "." + getFileExtension(template.content)
           var filePath=""
           if(template.setting.createFolder==true){
