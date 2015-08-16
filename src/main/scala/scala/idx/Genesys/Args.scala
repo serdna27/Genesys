@@ -18,6 +18,8 @@ object Args {
     @Parameter(names=Array("-h","--help"),description="Show help.",help=true)
     private var help:Boolean=_
 
+    @Parameter(names=Array("-v","--version"),description = "Show Version",help=true)
+    var showVersion:Boolean=_
 
     @Parameter(
       names=Array("-e","--entities"),

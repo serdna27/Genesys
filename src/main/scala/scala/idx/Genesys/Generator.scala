@@ -40,14 +40,12 @@ object Generator extends App {
 
     try {
       val jc = new JCommander(Args, args: _*)
-      if(Args.showTemplates==true){
-        if(Args.configFile.isEmpty){
-          //sys.exit(1)
-        }else{
+      if(Args.showVersion==true){
+        println(s"Version:${getClass.getPackage.getImplementationVersion}")
+      }
+      else if(Args.showTemplates==true && Args.configFile.isEmpty==false){
           config = Configuration(Args.configFile)
           showTemplates()
-          // sys.exit(1)
-        }
       }
       else if(Args.generateConfig==true){
         createConfig()
@@ -213,10 +211,9 @@ private def showTemplates()={
               case _ => throw new Exception("invalid key format")
             }
           }
-          if(template.name!=""){
-            entLabel=template.name
-          }
-          var fileName = template.setting.prefixName + entLabel + template.setting.suffixName + "." + getFileExtension(template.content)
+          val templateName=if(template.name !="") template.name else entLabel;
+
+          var fileName = template.setting.prefixName + templateName + template.setting.suffixName + "." + getFileExtension(template.content)
           var filePath=""
           if(template.setting.createFolder==true){
             filePath = Paths.get(template.setting.directory,entLabel, fileName).toString()
