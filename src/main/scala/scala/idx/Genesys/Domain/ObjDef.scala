@@ -81,7 +81,7 @@ trait DbParser extends SourceParser{
     var columnsResult=metadata.getColumns(null, null, tableName, null)
     val pks=getPrimaryKey(tableName,metadata)
     val fkMap=getForeingKeys(tableName, metadata);
-    println("foreing keys==>"+Map);
+    //println("foreing keys==>"+Map);
     while (columnsResult.next()) {
     
       entity.addField(
@@ -109,7 +109,7 @@ import scala.collection.JavaConverters._
 import scala.idx.Genesys.Util._
 
  def apply(config:Config,ents: java.util.List[String]=null):List[EntityDef]={
-    println("enter to Reader and type is==>"+config)
+    //println("enter to Reader and type is==>"+config)
     var entityList:List[EntityDef]=List()
     config match{
       case XmlSource(folder)=>{
@@ -126,7 +126,7 @@ import scala.idx.Genesys.Util._
         if(!(CommonUtil.dbDriverMapping.contains(dbType))){
           throw new Exception("Invalid db type")
         }
-        println("loading driver")  
+        //println("loading driver")
         Class.forName(CommonUtil.dbDriverMapping(dbType))
         val connection=DriverManager.getConnection(host,user,pwd)
         val metadata=connection.getMetaData
@@ -148,7 +148,7 @@ import scala.idx.Genesys.Util._
   private class EntityParser(source:Any) extends SourceParser {
     
     def parse():EntityDef={
-      println("initialize entity parser")
+      //println("initialize entity parser")
       return this.getEntity(source)
     }
   }

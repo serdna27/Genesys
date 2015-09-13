@@ -55,7 +55,7 @@ object Generator extends App {
         jc.usage()
       }
       else {
-        println("its going to process..")
+        //println("its going to process..")
         process()
       }
 
@@ -302,7 +302,7 @@ private def showTemplates()={
     var fileInfo = new File(file)
 
 
-    println("path==>" + fileInfo.getParent())
+    //println("path==>" + fileInfo.getParent())
     val dirExists = Files.exists(Paths.get(fileInfo.getParent()))
     //if directory does not exits create it
     if (dirExists == false) {
