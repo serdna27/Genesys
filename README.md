@@ -2,7 +2,7 @@
 Genesys is a (System|Code Generator) written in scala. This application allows to create source code from [handlerbar](http://handlebarsjs.com/) templates.
 Genesys supports 3 kinds sources:
 - Database
-- Xml
+- Xml(Limited)
 - Json(Pending)
 
 Genesys in order to run needs a json file that contains the basic information of the sources,the templates used for code generation and some other general configuration.Below an example of the configuration file:
@@ -10,26 +10,29 @@ Genesys in order to run needs a json file that contains the basic information of
 ```json
 {  
    "source":{  
-      "database":{
-      	 "dbType":"sql-server|postgres|mysql|oracle",  
-         "host":"your-host",
-         "user":"db-user",
-         "pwd":"db-pwd"
+      "database":{  
+         "host":"jdbc:database://host/db",
+         "user":"user",
+         "pwd":"password",
+         "dbType":"sql-server|postgres|mysql|oracle",
       },
       "xml":{  
-         "folderContent":"folder where the xml files are located"
+         "folderContent":"folder where the xml files are located."
       },
       "json":{  
-         "folderContent":"same as xml"
+         "folderContent":"same as xml."
       }
    },
    "sourceType":"db",
    "typeMapping":{  
       "int":"int",
+      "smallint":"int"
       "nvarchar":"string",
       "varchar":"string",
       "datetime":"DateTime",
-      "bit":"bool"
+      "bit":"bool",
+      "text":"string",
+      "serial":"int"
    },
    "useTypeMapping":true,
    "keysFormat":[  
@@ -39,16 +42,16 @@ Genesys in order to run needs a json file that contains the basic information of
       },
       {  
          "name":"#fields.name",
-         "format":"camelCase"
+         "format":"pascalCase"
       }
    ],
    "templates":[  
-      {  
+     {  
          "content":"YOUR-PATH/dto.cs",
          "setting":{  
             "saveOnDisk":true,
-            "directory":"YOUR-PATH/",
-            "author":"Genesys beta"
+            "suffixName":"DTO",
+            "directory":"YOUR-PATH/"
          }
       }
    ]
