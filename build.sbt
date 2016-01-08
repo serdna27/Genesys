@@ -24,4 +24,6 @@ libraryDependencies ++= Seq(
   "mysql" % "mysql-connector-java" % "5.1.34"
 )
 
+unmanagedResourceDirectories in Test += baseDirectory.value / "config"
+
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
