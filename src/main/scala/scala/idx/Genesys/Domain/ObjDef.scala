@@ -128,7 +128,13 @@ import scala.idx.Genesys.Util._
         }
         //println("loading driver")
         Class.forName(CommonUtil.dbDriverMapping(dbType))
-        val connection=DriverManager.getConnection(host,user,pwd)
+        
+        println(s"the db host url =>$host")
+        var connection=DriverManager.getConnection(host,user,pwd);
+        
+        if(user=="" || user==null){
+            connection=DriverManager.getConnection(host)
+        }
         val metadata=connection.getMetaData
         var tableResult=metadata.getTables(null, null, null, Array("TABLE"))
         while (tableResult.next()) {

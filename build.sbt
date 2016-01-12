@@ -7,6 +7,16 @@ scalaVersion :="2.11.4"
 
 assemblyJarName in assembly := "Genesys.jar"
 
+/*
+val sampleTask=taskKey[String]("Sample task created by me")
+
+sampleTask := {
+
+    println(s"hello world")
+    val command=""
+    command
+}
+*/
 
 libraryDependencies ++= Seq(
   // "junit" % "junit" % "4.7" % "test",
@@ -25,5 +35,9 @@ libraryDependencies ++= Seq(
 )
 
 unmanagedResourceDirectories in Test += baseDirectory.value / "config"
+
+unmanagedResourceDirectories in Test += baseDirectory.value / "data"
+
+unmanagedResourceDirectories in Compile += baseDirectory.value / "data"
 
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
