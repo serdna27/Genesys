@@ -17,7 +17,7 @@ Before running the generator, we first need a json file that contains the basic 
          "host":"jdbc:database://host/db",
          "user":"user",
          "pwd":"password",
-         "dbType":"sql-server|postgres|mysql|oracle",
+         "dbType":"sql-server|postgres|mysql|oracle|sqlite",
       },
       "xml":{  
          "folderContent":"folder where the xml files are located."
