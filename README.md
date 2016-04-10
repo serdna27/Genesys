@@ -1,7 +1,7 @@
 # Genesys
 Genesys is a (Code Generator) written in scala. This application allows you to create source code from database metadata using [handlerbar](http://handlebarsjs.com/) templates,if you want to try it go to releases and Download the latest file and place it in your path. Check sample Below:
 
-![](http://i.imgur.com/FuVHa1w.gifv)
+![](http://i.imgur.com/FuVHa1w.gif)
 
 Genesys supports 3 kinds of sources:
 - Database
